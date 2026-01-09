@@ -85,7 +85,7 @@ body {
 
 body::before {
     content: '';
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
@@ -119,4 +119,11 @@ body::before {
         transform: translateY(-2px);
         visibility: visible;
     }
+}
+
+/* Video Landing Page */
+
+#videoODS {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #3e3e3e1f;
 }

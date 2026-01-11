@@ -143,3 +143,50 @@ body::before {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background-color: #3e3e3e1f;
 }
+
+/* ODS Pages General */
+
+.infoODS-section {
+    height: 80vh;
+
+}
+.table-section .table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table-section .table td {
+    padding: 1rem;
+}
+
+.table-section .table th {
+    padding: 1rem;
+}
+
+.form-contact input::placeholder {
+    color: #adb5bd;
+}
+
+.form-contact textarea::placeholder {
+    color: #adb5bd;
+}
+
+/* ODS 1 Page */
+
+.table-ods1 {
+    background-color: #9a1b1b14;
+}
+
+.table-ods1 .table th {
+    background-color: #dc3545;
+    color: white;
+    padding: 1rem;
+}
+
+.form-contact-ods1{
+    background-color: #9a1b1b14;
+}
+
+.form-contact-ods1::placeholder{
+    color: white;
+}

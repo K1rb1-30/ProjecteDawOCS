@@ -187,6 +187,19 @@ body::before {
     background-color: #9a1b1b14;
 }
 
-.form-contact-ods1::placeholder{
+
+/* ODS 3 Page */
+
+.table-ods3 {
+    background-color: #1b9a2614;
+}
+
+.table-ods3 .table th {
+    background-color: #198754;
     color: white;
+    padding: 1rem;
+}
+
+.form-contact-ods3{
+    background-color: #1b9a2614;
 }

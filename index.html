@@ -6,17 +6,20 @@
     <title>Los 17 ODS para 2030 - Landing Page</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
+    <!-- Bootstrap JS (Esto es para que el navabar se active solo en los apartados con #) -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
+<!-- Esto es para que los elementos del navabar se activen solos al hacer scroll para saber en que apartado estas, para eso utilizamos el atributo data-bs-spy y data-bs-target para indicar el navabar que queremos activar  -->
+<body data-bs-spy="scroll" data-bs-target="#navbarMirador" data-bs-offset="70" tabindex="0">
 
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg bg-navbar navbar-dark">
+        <nav id="navbarMirador" class="navbar fixed-top navbar-expand-lg bg-navbar navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/">ODS</a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav justify-content-center mx-auto px-2">
                     <li class="nav-item">
-                        <a href="#" class="nav-link px-2 active" aria-current="page">Inicio</a>
+                        <a href="#inicio" class="nav-link px-2">Inicio</a>
                     </li> 
                     <li class="nav-item">
                         <a href="#infoODS" class="nav-link px-2">Los 17 objetivos</a>
@@ -25,22 +28,19 @@
                         <a href="#videoODS" class="nav-link px-2">Video </a>
                     </li> 
                     <li class="nav-item">
-                        <a href="#" class="nav-link px-2">ODS1</a>
+                        <a href="ODS1.html" class="nav-link px-2">ODS1</a>
                     </li> 
                     <li class="nav-item">
-                        <a href="#" class="nav-link px-2">ODS2</a>
+                        <a href="ODS2.html" class="nav-link px-2">ODS2</a>
                     </li>
                 </ul>
-                <button class="login-button btn btn-outline-light" type="submit">
-                    <a class="text-decoration-none text-light" href="login.html">Login</a>
-                </button>
                 </div>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="hero-section d-flex justify-content-center mx-auto my-8">
+        <section id="inicio" class="hero-section d-flex justify-content-center mx-auto my-8">
             <div class="row flex-row-reverse align-items-center">
             <div class="col-5 p-0 m-0">
                 <img src="/static/landingODS.webp" class="object-fit-cover d-block mx-auto img-fluid" alt="Hero Image" width="700" height="800">

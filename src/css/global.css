@@ -1,0 +1,205 @@
+/* Fuente Montserrat */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Fuente Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Clases para las diferentes variantes de la fuente Lato (esto sale en googlefonts al darle al boton de importar fuente) */
+
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/*
+
+Background CSS escogido de la pagina de https://bg.ibelick.com y modificado a CSS (Ya que la pagina da el formato en tailwindcss) patata
+
+<div class="relative h-full w-full bg-slate-950"><div class="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)]"></div></div>
+
+*/
+
+body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #020617;
+    font-family: "Lato", sans-serif;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: radial-gradient(circle 500px at 50% 200px, #3e3e3e, transparent);
+    z-index: -1;
+}
+
+/* Navbar Background */
+
+.bg-navbar {
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: whitesmoke 0px 0px 5px 0px;
+}
+
+/* Hero Section */
+
+.hero-section {
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+/* ODS CARDS */
+
+.card-ods {
+    background-color: transparent;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+ .card-ods-body {
+        transform: translateY(15px);
+        visibility: hidden;
+        transition: transform 0.4s;
+    }
+
+.card-ods:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #1a1a1a;
+    visibility: visible;
+    .card-ods-body {
+        transform: translateY(-2px);
+        visibility: visible;
+    }
+}
+
+/* Video Landing Page */
+
+#videoODS {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #3e3e3e1f;
+}
+
+/* ODS Pages General */
+
+.infoODS-section {
+    height: 80vh;
+
+}
+.table-section .table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table-section .table td {
+    padding: 1rem;
+}
+
+.table-section .table th {
+    padding: 1rem;
+}
+
+.form-contact input::placeholder {
+    color: #adb5bd;
+}
+
+.form-contact textarea::placeholder {
+    color: #adb5bd;
+}
+
+/* ODS 1 Page */
+
+.table-ods1 {
+    background-color: #9a1b1b14;
+}
+
+.table-ods1 .table th {
+    background-color: #dc3545;
+    color: white;
+    padding: 1rem;
+}
+
+.form-contact-ods1{
+    background-color: #9a1b1b14;
+}
+
+
+/* ODS 3 Page */
+
+.table-ods3 {
+    background-color: #1b9a2614;
+}
+
+.table-ods3 .table th {
+    background-color: #198754;
+    color: white;
+    padding: 1rem;
+}
+
+.form-contact-ods3{
+    background-color: #1b9a2614;
+}

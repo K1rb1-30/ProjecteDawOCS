@@ -212,6 +212,5 @@ body::before {
 @media (max-width: 768px) {
     .video-yt {
         width: 100%;
-        height: auto;
     }
 }

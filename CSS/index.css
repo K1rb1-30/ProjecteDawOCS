@@ -144,6 +144,7 @@ body::before {
     background-color: #3e3e3e1f;
 }
 
+
 /* ODS Pages General */
 
 .infoODS-section {
@@ -202,4 +203,15 @@ body::before {
 
 .form-contact-ods3{
     background-color: #1b9a2614;
+}
+
+/* Cosas responsive que no van con bootstrap */
+
+/* Video yt */
+
+@media (max-width: 768px) {
+    .video-yt {
+        width: 100%;
+        height: auto;
+    }
 }

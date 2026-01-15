@@ -203,3 +203,12 @@ body::before {
 .form-contact-ods3{
     background-color: #1b9a2614;
 }
+
+/* CSS media queries si no van en bootstrap */
+
+@media (max-width: 768px) {
+    .video-yt {
+        height: 200px;
+        width: 100%;
+    }
+}

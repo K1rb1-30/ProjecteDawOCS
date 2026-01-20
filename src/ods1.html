@@ -6,17 +6,23 @@
     <title>ODS 1 - Fin de la Pobreza</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/global.css">
+    <script src="/src/bootstrap/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 
-    <header>
-        <nav class="navbar fixed-top navbar-expand-lg bg-navbar navbar-dark">
+   <header>
+        <nav id="navbarMirador" class="navbar fixed-top navbar-expand-lg bg-navbar navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/">ODS</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav justify-content-center mx-auto px-2">
                     <li class="nav-item">
-                        <a href="/#" class="nav-link px-2" aria-current="page">Inicio</a>
+                        <a href="/#inicio" class="nav-link px-2">Inicio</a>
                     </li> 
                     <li class="nav-item">
                         <a href="/#infoODS" class="nav-link px-2">Los 17 objetivos</a>
@@ -25,10 +31,10 @@
                         <a href="/#videoODS" class="nav-link px-2">Video </a>
                     </li> 
                     <li class="nav-item">
-                        <a href="ods1.html" class="nav-link px-2 active" aria-current="page">ODS 1</a>
+                        <a href="/src/ods1.html" class="nav-link px-2 active" aria-current="page">ODS 1</a>
                     </li> 
                     <li class="nav-item">
-                        <a href="ods3.html" class="nav-link px-2">ODS 3</a>
+                        <a href="/src/ods3.html" class="nav-link px-2">ODS 3</a>
                     </li>
                 </ul>
                 </div>
@@ -39,16 +45,16 @@
     <main>
         <section class="container my-5 infoODS-section">
             <div>
-                <p class="lead lato-regular text-light mt-2 mb-0 py-5"><span class="bg-danger rounded-4 p-2 me-2">#1</span>Objetivo de Desarrollo Sostenible</p>
+                <p class="lead lato-regular text-light mt-2 mb-0 py-5"><span class="bg-danger badge p-2 me-2">#1</span>Objetivo de Desarrollo Sostenible</p>
                 <h1 class="display-4 lato-bold text-light">Fin de la Pobreza</h1>
                 <p class="fs-5 lato-regular text-secondary">Poner fin a la pobreza en todas sus formas en todo el mundo.</p>
             </div>
 
-            <div class="row d-flex align-items-center my-5">
-                <div class="col">
+            <div class="row align-items-center my-5 g-4">
+                <div class="col-12 col-md-6">
                     <img src="/public/ods1_fin_de_la_pobreza.webp" class="img-fluid rounded-4" alt="Imagen ODS1" width="500" height="400">
                 </div>
-                <div class="col">
+                <div class="col-12 col-md-6">
                     <h2 class="lato-bold text-light">¿Por qué es importante?</h2>
                     <p class="lato-regular text-secondary h5">La pobreza extrema se ha reducido a la mitad desde 1990. Sin embargo, más de 700 millones de personas todavía viven con menos de 1,90 dólares al día. La pandemia de COVID-19 ha revertido décadas de progreso, empujando a millones más a la pobreza extrema.
                     <br><br>
@@ -62,12 +68,12 @@
             </div>
         </section>
 
-        <section class="py-2 table-section table-ods1">
+        <section class="py-0 table-section table-ods1">
             <div class="container text-center pt-5">
                 <h2 class="text-light h2 lato-bold">Datos y Estadísticas</h2>
 
                 <div class="d-flex text-start py-4">
-                    <table class="table table-dark table-hover">
+                    <table class="table table-dark table-hover border border-secondary rounded-3">
                         <thead>
                             <tr class="table-danger">
                             <th scope="col">Indicador</th>
@@ -115,14 +121,14 @@
 
         <section>
             <div class="container text-center my-5">
-                <div class="row gap-2 d-flex align-items-center my-5">
-                    <div class="col text-start">
-                        <h4 class="text-light lato-bold pb-2">Juntos Podemos</h4>
+                <div class="row g-4 align-items-center my-5">
+                    <div class="col-12 col-md-6 text-start">
+                        <h4 class="text-light lato-bold pb-2 h2">Juntos Podemos</h4>
                         <img src="/public/ods1_form.webp" class="img-fluid rounded-4" alt="Imagen ODS1" width="600" height="600">
                         <p class="text-secondary lato-regular mt-2">La erradicación de la pobreza requiere un esfuerzo colectivo de gobiernos, organizaciones y ciudadanos comprometidos con el cambio.</p>
                     </div>
 
-                    <div class="col text-start border border-secondary rounded-4 p-4 form-contact form-contact-ods1">
+                    <div class="col-12 col-md-6 text-start border border-secondary rounded-4 p-4 form-contact form-contact-ods1">
                         <div>
                             <h4 class="lato-bold text-light mb-2">Únete al Cambio</h4>
                             <p class="text-secondary lato-regular">Comparte tus ideas y comprométete con Fin de la Pobreza. Tu voz importa.</p>

@@ -6,6 +6,7 @@
     <title>ODS 3 - Salud y Bienestar</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/global.css">
+    <script src="/src/bootstrap/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 
@@ -13,6 +14,9 @@
         <nav class="navbar fixed-top navbar-expand-lg bg-navbar navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/">ODS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav justify-content-center mx-auto px-2">
                     <li class="nav-item">
@@ -39,16 +43,16 @@
     <main>
         <section class="container my-5 infoODS-section">
             <div>
-                <p class="lead lato-regular text-light mt-2 mb-0 py-5"><span class="bg-success rounded-4 p-2 me-2">#3</span>Objetivo de Desarrollo Sostenible</p>
+                <p class="lead lato-regular text-light mt-2 mb-0 py-5"><span class="bg-success badge p-2 me-2">#3</span>Objetivo de Desarrollo Sostenible</p>
                 <h1 class="display-4 lato-bold text-light">Salud y Bienestar</h1>
                 <p class="fs-5 lato-regular text-secondary">Garantizar una vida sana y promover el bienestar para todos en todas las edades.</p>
             </div>
 
-            <div class="row d-flex align-items-center my-5">
-                <div class="col">
+            <div class="row align-items-center my-5 g-4">
+                <div class="col-12 col-md-6 order-md-last">
                     <img src="/public/ods3_salud_y_bienestar.webp" class="img-fluid rounded-4" alt="Imagen ODS3" width="500" height="400">
                 </div>
-                <div class="col">
+                <div class="col-12 col-md-6 order-md-first">
                     <h2 class="lato-bold text-light">¿Por qué es importante?</h2>
                     <p class="lato-regular text-secondary h5">Garantizar una vida saludable y promover el bienestar para todos en todas las edades es esencial para el desarrollo sostenible. La pandemia de COVID-19 ha destacado la importancia crucial de sistemas de salud robustos y el acceso universal a servicios médicos de calidad.
                     <br><br>
@@ -62,14 +66,93 @@
             </div>
         </section>
 
-        <section class="py-2 table-section table-ods3">
+        
+        <section class="py-3">
+            <div class="container my-4">
+                <h2 class="text-light h2 lato-bold text-center mb-4">Retos actuales en salud</h2>
+                <div class="row g-4">
+                    <div class="col-12 col-md-4">
+                        <div class="p-4 border border-secondary rounded-4 bg-dark">
+                            <h5 class="text-success lato-bold">Cobertura sanitaria</h5>
+                            <p class="text-secondary lato-regular mb-2">3.500 millones de personas aún no tienen acceso completo a servicios esenciales.</p>
+                            <span class="badge bg-success-subtle text-success">ODS 3.8</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="p-4 border border-secondary rounded-4 bg-dark">
+                            <h5 class="text-success lato-bold">Salud mental</h5>
+                            <p class="text-secondary lato-regular mb-2">1 de cada 8 personas vive con un trastorno mental; el 70% no recibe atención.</p>
+                            <span class="badge bg-success-subtle text-success">ODS 3.4</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="p-4 border border-secondary rounded-4 bg-dark">
+                            <h5 class="text-success lato-bold">Prevención y vacunas</h5>
+                            <p class="text-secondary lato-regular mb-2">Las coberturas de inmunización infantil han caído al nivel más bajo en 15 años.</p>
+                            <span class="badge bg-success-subtle text-success">ODS 3.b</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container my-4">
+                <h2 class="text-light h2 lato-bold text-center mb-4">Iniciativas que están cambiando vidas</h2>
+                <div class="row g-4 align-items-center">
+                    <div class="col-12 col-md-6 text-start">
+                        <ul class="list-group list-group-flush border border-dark rounded-4">
+                            <li class="list-group-item bg-dark text-secondary border-secondary">
+                                <span class="text-success lato-bold">Cobertura Sanitaria Universal (CSU)</span><br>
+                                Paquetes de servicios esenciales financiados públicamente.
+                            </li>
+                            <li class="list-group-item bg-dark text-secondary border-secondary">
+                                <span class="text-success lato-bold">Reducción de mortalidad materna</span><br>
+                                Formación de parteras y acceso a partos seguros.
+                            </li>
+                            <li class="list-group-item bg-dark text-secondary border-secondary">
+                                <span class="text-success lato-bold">Telemedicina rural</span><br>
+                                Centros de conexión para comunidades remotas.
+                            </li>
+                            <li class="list-group-item bg-dark text-secondary border-secondary">
+                                <span class="text-success lato-bold">Programas de salud mental</span><br>
+                                Líneas de ayuda y cobertura de terapias básicas.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 text-light">
+                        <div class="mb-3">
+                            <p class="mb-1 text-secondary">Cobertura básica alcanzada</p>
+                            <div class="progress bg-dark border border-secondary">
+                                <div class="progress-bar bg-success" style="width: 62%;">62%</div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <p class="mb-1 text-secondary">Reducción mortalidad materna</p>
+                            <div class="progress bg-dark border border-secondary">
+                                <div class="progress-bar bg-success" style="width: 45%;">45%</div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <p class="mb-1 text-secondary">Acceso a salud mental</p>
+                            <div class="progress bg-dark border border-secondary">
+                                <div class="progress-bar bg-success" style="width: 30%;">30%</div>
+                            </div>
+                        </div>
+                        <p class="text-secondary lato-regular mt-3">Datos ilustrativos para destacar avances y brechas actuales.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-0 table-section table-ods3">
             <div class="container text-center pt-5">
                 <h2 class="text-light h2 lato-bold">Datos y Estadísticas</h2>
 
                 <div class="d-flex text-start py-4">
-                    <table class="table table-dark table-hover">
+                    <table class="table table-dark table-hover border border-secondary rounded-3">
                         <thead>
-                            <tr class="table-danger">
+                            <tr>
                             <th scope="col">Indicador</th>
                             <th scope="col">Dato</th>
                             <th scope="col">Año</th>
@@ -115,14 +198,14 @@
 
         <section>
             <div class="container text-center my-5">
-                <div class="row gap-2 d-flex align-items-center my-5">
-                    <div class="col text-start">
-                        <h4 class="text-light lato-bold pb-2">Salud para Todos</h4>
+                <div class="row g-3 align-items-center my-5">
+                    <div class="col-12 col-md-6 text-start order-md-last">
+                        <h4 class="text-light lato-bold h2 pb-2">Salud para Todos</h4>
                         <img src="/public/ods3_form.webp" class="img-fluid rounded-4" alt="Imagen ODS3" width="600" height="600">
                         <p class="text-secondary lato-regular mt-2">La salud es un derecho humano fundamental. El acceso universal a servicios de salud de calidad es esencial para el desarrollo sostenible y el bienestar de todas las personas.</p>
                     </div>
 
-                    <div class="col text-start border border-secondary rounded-4 p-4 form-contact form-contact-ods3">
+                    <div class="col-12 col-md-6 order-md-first text-start border border-secondary rounded-4 p-4 form-contact form-contact-ods3">
                         <div>
                             <h4 class="lato-bold text-light mb-2">Únete al Cambio</h4>
                             <p class="text-secondary lato-regular">Comparte tus ideas y comprométete con Salud y Bienestar. Tu voz importa.</p>
